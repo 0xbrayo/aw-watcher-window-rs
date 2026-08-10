@@ -1,0 +1,23 @@
+[package]
+name = "aw-watcher-window-rs"
+version = "0.1.0"
+edition = "2024"
+description = "macOS window watcher for ActivityWatch (Rust)"
+license = "MPL-2.0"
+
+[dependencies]
+axuielement = "0.9.1"
+chrono = { version = "0.4.45", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+core-foundation = "0.10.1"
+gethostname = "1.1.0"
+objc2-app-kit = { version = "0.3", features = ["NSWorkspace", "NSRunningApplication"] }
+objc2-foundation = { version = "0.3", features = ["NSString"] }
+regex = "1"
+reqwest = { version = "0.13.4", features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+tokio = { version = "1.52.3", features = ["full"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
