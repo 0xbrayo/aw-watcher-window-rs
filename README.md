@@ -117,3 +117,7 @@ CI (GitHub Actions) runs format check, clippy, `cargo check`, and tests on `maco
 
 - Linux / Windows
 - Replacing official bucket names (`aw-watcher-window` / `aw-watcher-afk`) — use `-rs` suffixes on purpose
+
+## License
+
+[MPL-2.0](LICENSE), same as [ActivityWatch](https://github.com/ActivityWatch/activitywatch).
