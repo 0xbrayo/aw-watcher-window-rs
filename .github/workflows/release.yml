@@ -38,6 +38,9 @@ jobs:
     name: Create Release
     needs: build
     runs-on: ubuntu-latest
+    # GITHUB_TOKEN defaults to read-only for this repo; creating a release needs write.
+    permissions:
+      contents: write
 
     steps:
       - name: Download all artifacts
